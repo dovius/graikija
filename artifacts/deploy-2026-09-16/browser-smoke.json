@@ -1,0 +1,47 @@
+{
+  "origin": "https://italiano.vild.lt",
+  "liveApi": "mocked",
+  "checkedAt": "2026-09-16T16:35:40.472Z",
+  "results": [
+    {
+      "browser": "chromium",
+      "width": 320,
+      "height": 568,
+      "pauseHeight": 64,
+      "pauseAboveTranscript": true,
+      "pauseResumePassed": true,
+      "pageErrors": [],
+      "unexpectedApiCalls": []
+    },
+    {
+      "browser": "chromium",
+      "width": 390,
+      "height": 640,
+      "pauseHeight": 64,
+      "pauseAboveTranscript": true,
+      "pauseResumePassed": true,
+      "pageErrors": [],
+      "unexpectedApiCalls": []
+    },
+    {
+      "browser": "webkit",
+      "width": 320,
+      "height": 568,
+      "pauseHeight": 64,
+      "pauseAboveTranscript": true,
+      "pauseResumePassed": true,
+      "pageErrors": [],
+      "unexpectedApiCalls": []
+    },
+    {
+      "browser": "webkit",
+      "width": 390,
+      "height": 640,
+      "pauseHeight": 64,
+      "pauseAboveTranscript": true,
+      "pauseResumePassed": true,
+      "pageErrors": [],
+      "unexpectedApiCalls": []
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "promptVersion": "2026-10-08.el.1",
+  "createdAt": "2026-10-08T21:29:38.298Z",
+  "synthetic": true,
+  "notes": [],
+  "conversations": [
+    {
+      "name": "lt_numbers",
+      "input": "Norėtume staliuko šešiems žmonėms rytoj penkioliktą trisdešimt.",
+      "inputSeconds": 5.75,
+      "heard": " Norėtume staliuko šešiems žmonėms rytoj penkioliktą trisdešimt",
+      "translated": " Θα θέλαμε ένα τραπέζι για έξι άτομα αύριο στις δεκαπέντε τριάντα.",
+      "audioBytes": 907200,
+      "unsolicitedBeforeInput": "",
+      "events": [
+        {
+          "type": "session.started",
+          "ms": 2028,
+          "client_event_id": "af13678a-8c1c-4223-b8f1-fd51acbf9765"
+        },
+        {
+          "type": "session.usage.updated",
+          "ms": 16778
+        },
+        {
+          "type": "session.closed",
+          "ms": 23045,
+          "client_event_id": "bddfb6b6-b6a0-4725-8023-402a0ad06252"
+        }
+      ],
+      "closed": true,
+      "sessionId": "live_u2_EWpyHp3oN6GiiQYpb2EwNFyOv9Y3EWPQ",
+      "usage": {
+        "seconds": 20
+      }
+    },
+    {
+      "name": "el_numbers",
+      "input": "Η επιστροφή είναι στις δεκαεπτά και τριάντα. Η τιμή είναι δεκαπέντε ευρώ το άτομο.",
+      "inputSeconds": 7.35,
+      "heard": "",
+      "translated": "",
+      "audioBytes": 196800,
+      "unsolicitedBeforeInput": "",
+      "events": [
+        {
+          "type": "session.started",
+          "ms": 1454,
+          "client_event_id": "7de2e719-0c3c-48de-afdc-578740efc2f1"
+        },
+        {
+          "type": "session.usage.updated",
+          "ms": 30355
+        },
+        {
+          "type": "error",
+          "ms": 30789
+        }
+      ],
+      "closed": false,
+      "sessionId": "live_u1_EWpygp3oMh9QZY0vkaCowSHnKH3XznkD",
+      "hangupConfirmed": false,
+      "error": "Missing translation, audio, or close acknowledgement"
+    }
+  ]
+}

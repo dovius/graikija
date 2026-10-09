@@ -1,0 +1,2154 @@
+[
+  {
+    "name": "home",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 772,
+    "modal": [],
+    "controls": [
+      {
+        "text": " GYVAIVersti pokalbįLietuviškai ⇄ itališkaiKalbėkite lietuviškai.Išversime abiem pusėms.Pradėti pokalbį",
+        "top": 151,
+        "bottom": 263,
+        "width": 358,
+        "height": 112
+      },
+      {
+        "text": "Aa Išversti nuotraukąMeniu, ženklai, bilietaiViskas aiškiai lietuviškai.Pasirinkti nuotrauką",
+        "top": 275,
+        "bottom": 387,
+        "width": 358,
+        "height": 112
+      },
+      {
+        "text": "Ciao!Paklausti patarimoAtsakymai lietuviškaiApie maistą, transportą ir kelionę.Užduoti klausimą",
+        "top": 399,
+        "bottom": 511,
+        "width": 358,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "help",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 772,
+    "modal": [
+      {
+        "className": "modal help-modal",
+        "top": 8,
+        "bottom": 632,
+        "left": 8,
+        "right": 382,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 9,
+        "bottom": 90,
+        "left": 9,
+        "right": 381,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 23,
+        "bottom": 75,
+        "left": 254.515625,
+        "right": 365,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 90,
+        "bottom": 544,
+        "left": 9,
+        "right": 381,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": " GYVAIVersti pokalbįLietuviškai ⇄ itališkaiKalbėkite lietuviškai.Išversime abiem pusėms.Pradėti pokalbį",
+        "top": 151,
+        "bottom": 263,
+        "width": 358,
+        "height": 112
+      },
+      {
+        "text": "Aa Išversti nuotraukąMeniu, ženklai, bilietaiViskas aiškiai lietuviškai.Pasirinkti nuotrauką",
+        "top": 275,
+        "bottom": 387,
+        "width": 358,
+        "height": 112
+      },
+      {
+        "text": "Ciao!Paklausti patarimoAtsakymai lietuviškaiApie maistą, transportą ir kelionę.Užduoti klausimą",
+        "top": 399,
+        "bottom": 511,
+        "width": 358,
+        "height": 112
+      },
+      {
+        "text": " Supratau",
+        "top": 557,
+        "bottom": 615,
+        "width": 340,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "photo",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 724,
+    "modal": [],
+    "controls": []
+  },
+  {
+    "name": "photo-answer",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 561,
+        "bottom": 617,
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 561,
+        "bottom": 617,
+        "width": 160,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "assistant",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 831,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 261,
+        "bottom": 317,
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 261,
+        "bottom": 317,
+        "width": 160,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "assistant-answer",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 561,
+        "bottom": 617,
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 561,
+        "bottom": 617,
+        "width": 160,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "assistant-typing",
+    "width": 390,
+    "height": 380,
+    "scrollWidth": 390,
+    "scrollHeight": 380,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 301,
+        "bottom": 357,
+        "width": 160,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 301,
+        "bottom": 357,
+        "width": 160,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "live-ready",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 190.53125,
+        "bottom": 254.53125,
+        "width": 131.1875,
+        "height": 64
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 568,
+        "bottom": 628,
+        "width": 358,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "live",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 132.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 568,
+        "bottom": 628,
+        "width": 358,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "selected",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 132.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 568,
+        "bottom": 628,
+        "width": 358,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "show",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [
+      {
+        "className": "modal translation-modal",
+        "top": 0,
+        "bottom": 640,
+        "left": 0,
+        "right": 390,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 0,
+        "bottom": 81,
+        "left": 0,
+        "right": 390,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 14,
+        "bottom": 66,
+        "left": 263.515625,
+        "right": 374,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 81,
+        "bottom": 485,
+        "left": 0,
+        "right": 390,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 132.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 568,
+        "bottom": 628,
+        "width": 358,
+        "height": 60
+      },
+      {
+        "text": " Pakartoti",
+        "top": 498,
+        "bottom": 556,
+        "width": 172.5,
+        "height": 58
+      },
+      {
+        "text": " Grįžti",
+        "top": 498,
+        "bottom": 556,
+        "width": 172.5,
+        "height": 58
+      },
+      {
+        "text": "Baigti pokalbį",
+        "top": 566,
+        "bottom": 624,
+        "width": 358,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "show-reply",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [
+      {
+        "className": "modal translation-modal",
+        "top": 0,
+        "bottom": 640,
+        "left": 0,
+        "right": 390,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 0,
+        "bottom": 81,
+        "left": 0,
+        "right": 390,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 14,
+        "bottom": 66,
+        "left": 263.515625,
+        "right": 374,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 81,
+        "bottom": 485,
+        "left": 0,
+        "right": 390,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 132.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 568,
+        "bottom": 628,
+        "width": 358,
+        "height": 60
+      },
+      {
+        "text": " Pakartoti",
+        "top": 498,
+        "bottom": 556,
+        "width": 172.5,
+        "height": 58
+      },
+      {
+        "text": " Grįžti",
+        "top": 498,
+        "bottom": 556,
+        "width": 172.5,
+        "height": 58
+      },
+      {
+        "text": "Baigti pokalbį",
+        "top": 566,
+        "bottom": 624,
+        "width": 358,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "live-menu",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [
+      {
+        "className": "modal live-menu-modal",
+        "top": 8,
+        "bottom": 632,
+        "left": 8,
+        "right": 382,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 9,
+        "bottom": 90,
+        "left": 9,
+        "right": 381,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 23,
+        "bottom": 75,
+        "left": 254.515625,
+        "right": 365,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 90,
+        "bottom": 631,
+        "left": 9,
+        "right": 381,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 132.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 568,
+        "bottom": 628,
+        "width": 358,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "recap",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [
+      {
+        "className": "modal conversation-note",
+        "top": 8,
+        "bottom": 632,
+        "left": 8,
+        "right": 382,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 9,
+        "bottom": 90,
+        "left": 9,
+        "right": 381,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 23,
+        "bottom": 75,
+        "left": 254.515625,
+        "right": 365,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 90,
+        "bottom": 474,
+        "left": 9,
+        "right": 381,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 132.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 568,
+        "bottom": 628,
+        "width": 358,
+        "height": 60
+      },
+      {
+        "text": "Išklausyti",
+        "top": 487,
+        "bottom": 545,
+        "width": 340,
+        "height": 58
+      },
+      {
+        "text": "Grįžti į pokalbį",
+        "top": 557,
+        "bottom": 615,
+        "width": 340,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "paused",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 640,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Klausytis toliau",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 132.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 490.125,
+        "bottom": 558,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 568,
+        "bottom": 628,
+        "width": 358,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "ended",
+    "width": 390,
+    "height": 640,
+    "scrollWidth": 390,
+    "scrollHeight": 946,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Tęsti pokalbį",
+        "top": 278.984375,
+        "bottom": 342.984375,
+        "width": 328,
+        "height": 64
+      },
+      {
+        "text": "Naujas pokalbis",
+        "top": 356.984375,
+        "bottom": 414.984375,
+        "width": 328,
+        "height": 58
+      },
+      {
+        "text": " Pakartoti",
+        "top": 858.578125,
+        "bottom": 926.453125,
+        "width": 174,
+        "height": 67.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 858.578125,
+        "bottom": 926.453125,
+        "width": 174,
+        "height": 67.875
+      }
+    ]
+  },
+  {
+    "name": "home",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 755,
+    "modal": [],
+    "controls": [
+      {
+        "text": " GYVAIVersti pokalbįLietuviškai ⇄ itališkaiKalbėkite lietuviškai.Išversime abiem pusėms.Pradėti pokalbį",
+        "top": 134.5,
+        "bottom": 246.5,
+        "width": 296,
+        "height": 112
+      },
+      {
+        "text": "Aa Išversti nuotraukąMeniu, ženklai, bilietaiViskas aiškiai lietuviškai.Pasirinkti nuotrauką",
+        "top": 258.5,
+        "bottom": 370.5,
+        "width": 296,
+        "height": 112
+      },
+      {
+        "text": "Ciao!Paklausti patarimoAtsakymai lietuviškaiApie maistą, transportą ir kelionę.Užduoti klausimą",
+        "top": 382.5,
+        "bottom": 494.5,
+        "width": 296,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "help",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 755,
+    "modal": [
+      {
+        "className": "modal help-modal",
+        "top": 8,
+        "bottom": 560,
+        "left": 8,
+        "right": 312,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 9,
+        "bottom": 93,
+        "left": 9,
+        "right": 311,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 24.5,
+        "bottom": 76.5,
+        "left": 184.515625,
+        "right": 295,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 93,
+        "bottom": 472,
+        "left": 9,
+        "right": 311,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": " GYVAIVersti pokalbįLietuviškai ⇄ itališkaiKalbėkite lietuviškai.Išversime abiem pusėms.Pradėti pokalbį",
+        "top": 134.5,
+        "bottom": 246.5,
+        "width": 296,
+        "height": 112
+      },
+      {
+        "text": "Aa Išversti nuotraukąMeniu, ženklai, bilietaiViskas aiškiai lietuviškai.Pasirinkti nuotrauką",
+        "top": 258.5,
+        "bottom": 370.5,
+        "width": 296,
+        "height": 112
+      },
+      {
+        "text": "Ciao!Paklausti patarimoAtsakymai lietuviškaiApie maistą, transportą ir kelionę.Užduoti klausimą",
+        "top": 382.5,
+        "bottom": 494.5,
+        "width": 296,
+        "height": 112
+      },
+      {
+        "text": " Supratau",
+        "top": 485,
+        "bottom": 543,
+        "width": 270,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "photo",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 793,
+    "modal": [],
+    "controls": []
+  },
+  {
+    "name": "photo-answer",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 489,
+        "bottom": 545,
+        "width": 129,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 489,
+        "bottom": 545,
+        "width": 129,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "assistant",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 886,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 280,
+        "bottom": 336,
+        "width": 129,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 280,
+        "bottom": 336,
+        "width": 129,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "assistant-answer",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 489,
+        "bottom": 545,
+        "width": 129,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 489,
+        "bottom": 545,
+        "width": 129,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "live-ready",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 168.03125,
+        "bottom": 232.03125,
+        "width": 108,
+        "height": 64
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 496,
+        "bottom": 556,
+        "width": 296,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "live",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 149.09375,
+        "bottom": 213.09375,
+        "width": 109.59375,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 496,
+        "bottom": 556,
+        "width": 296,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "selected",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 149.09375,
+        "bottom": 213.09375,
+        "width": 109.59375,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 496,
+        "bottom": 556,
+        "width": 296,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "show",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [
+      {
+        "className": "modal translation-modal",
+        "top": 0,
+        "bottom": 568,
+        "left": 0,
+        "right": 320,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 0,
+        "bottom": 81,
+        "left": 0,
+        "right": 320,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 14,
+        "bottom": 66,
+        "left": 193.515625,
+        "right": 304,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 81,
+        "bottom": 413,
+        "left": 0,
+        "right": 320,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 149.09375,
+        "bottom": 213.09375,
+        "width": 109.59375,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 496,
+        "bottom": 556,
+        "width": 296,
+        "height": 60
+      },
+      {
+        "text": " Pakartoti",
+        "top": 426,
+        "bottom": 484,
+        "width": 145.984375,
+        "height": 58
+      },
+      {
+        "text": " Grįžti",
+        "top": 426,
+        "bottom": 484,
+        "width": 129.015625,
+        "height": 58
+      },
+      {
+        "text": "Baigti pokalbį",
+        "top": 494,
+        "bottom": 552,
+        "width": 288,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "show-reply",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [
+      {
+        "className": "modal translation-modal",
+        "top": 0,
+        "bottom": 568,
+        "left": 0,
+        "right": 320,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 0,
+        "bottom": 81,
+        "left": 0,
+        "right": 320,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 14,
+        "bottom": 66,
+        "left": 193.515625,
+        "right": 304,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 81,
+        "bottom": 413,
+        "left": 0,
+        "right": 320,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 149.09375,
+        "bottom": 213.09375,
+        "width": 109.59375,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 496,
+        "bottom": 556,
+        "width": 296,
+        "height": 60
+      },
+      {
+        "text": " Pakartoti",
+        "top": 426,
+        "bottom": 484,
+        "width": 145.984375,
+        "height": 58
+      },
+      {
+        "text": " Grįžti",
+        "top": 426,
+        "bottom": 484,
+        "width": 129.015625,
+        "height": 58
+      },
+      {
+        "text": "Baigti pokalbį",
+        "top": 494,
+        "bottom": 552,
+        "width": 288,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "live-menu",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [
+      {
+        "className": "modal live-menu-modal",
+        "top": 8,
+        "bottom": 560,
+        "left": 8,
+        "right": 312,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 9,
+        "bottom": 93,
+        "left": 9,
+        "right": 311,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 24.5,
+        "bottom": 76.5,
+        "left": 184.515625,
+        "right": 295,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 93,
+        "bottom": 559,
+        "left": 9,
+        "right": 311,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 149.09375,
+        "bottom": 213.09375,
+        "width": 109.59375,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 496,
+        "bottom": 556,
+        "width": 296,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "recap",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [
+      {
+        "className": "modal conversation-note",
+        "top": 8,
+        "bottom": 560,
+        "left": 8,
+        "right": 312,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 9,
+        "bottom": 90,
+        "left": 9,
+        "right": 311,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 23,
+        "bottom": 75,
+        "left": 184.515625,
+        "right": 295,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 90,
+        "bottom": 402,
+        "left": 9,
+        "right": 311,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 149.09375,
+        "bottom": 213.09375,
+        "width": 109.59375,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 496,
+        "bottom": 556,
+        "width": 296,
+        "height": 60
+      },
+      {
+        "text": "Išklausyti",
+        "top": 415,
+        "bottom": 473,
+        "width": 270,
+        "height": 58
+      },
+      {
+        "text": "Grįžti į pokalbį",
+        "top": 485,
+        "bottom": 543,
+        "width": 270,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "paused",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 568,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Klausytis toliau",
+        "top": 149.09375,
+        "bottom": 213.09375,
+        "width": 109.59375,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 422.125,
+        "bottom": 486,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 496,
+        "bottom": 556,
+        "width": 296,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "ended",
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "scrollHeight": 929,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Tęsti pokalbį",
+        "top": 281.984375,
+        "bottom": 345.984375,
+        "width": 270,
+        "height": 64
+      },
+      {
+        "text": "Naujas pokalbis",
+        "top": 359.984375,
+        "bottom": 417.984375,
+        "width": 270,
+        "height": 58
+      },
+      {
+        "text": " Pakartoti",
+        "top": 845.578125,
+        "bottom": 909.453125,
+        "width": 143,
+        "height": 63.875
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 845.578125,
+        "bottom": 909.453125,
+        "width": 143,
+        "height": 63.875
+      }
+    ]
+  },
+  {
+    "name": "home",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [],
+    "controls": [
+      {
+        "text": " GYVAIVersti pokalbįLietuviškai ⇄ itališkaiKalbėkite lietuviškai.Išversime abiem pusėms.Pradėti pokalbį",
+        "top": 151,
+        "bottom": 263,
+        "width": 398,
+        "height": 112
+      },
+      {
+        "text": "Aa Išversti nuotraukąMeniu, ženklai, bilietaiViskas aiškiai lietuviškai.Pasirinkti nuotrauką",
+        "top": 275,
+        "bottom": 387,
+        "width": 398,
+        "height": 112
+      },
+      {
+        "text": "Ciao!Paklausti patarimoAtsakymai lietuviškaiApie maistą, transportą ir kelionę.Užduoti klausimą",
+        "top": 399,
+        "bottom": 511,
+        "width": 398,
+        "height": 112
+      }
+    ]
+  },
+  {
+    "name": "help",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [
+      {
+        "className": "modal help-modal",
+        "top": 156.109375,
+        "bottom": 775.890625,
+        "left": 8,
+        "right": 422,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 157.109375,
+        "bottom": 238.109375,
+        "left": 9,
+        "right": 421,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 171.109375,
+        "bottom": 223.109375,
+        "left": 294.515625,
+        "right": 405,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 238.109375,
+        "bottom": 687.890625,
+        "left": 9,
+        "right": 421,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": " GYVAIVersti pokalbįLietuviškai ⇄ itališkaiKalbėkite lietuviškai.Išversime abiem pusėms.Pradėti pokalbį",
+        "top": 151,
+        "bottom": 263,
+        "width": 398,
+        "height": 112
+      },
+      {
+        "text": "Aa Išversti nuotraukąMeniu, ženklai, bilietaiViskas aiškiai lietuviškai.Pasirinkti nuotrauką",
+        "top": 275,
+        "bottom": 387,
+        "width": 398,
+        "height": 112
+      },
+      {
+        "text": "Ciao!Paklausti patarimoAtsakymai lietuviškaiApie maistą, transportą ir kelionę.Užduoti klausimą",
+        "top": 399,
+        "bottom": 511,
+        "width": 398,
+        "height": 112
+      },
+      {
+        "text": " Supratau",
+        "top": 700.890625,
+        "bottom": 758.890625,
+        "width": 380,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "photo",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [],
+    "controls": []
+  },
+  {
+    "name": "photo-answer",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 853,
+        "bottom": 909,
+        "width": 180,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 853,
+        "bottom": 909,
+        "width": 180,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "assistant",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 261,
+        "bottom": 317,
+        "width": 180,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 261,
+        "bottom": 317,
+        "width": 180,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "assistant-answer",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [],
+    "controls": [
+      {
+        "text": " Kalbėti",
+        "top": 853,
+        "bottom": 909,
+        "width": 180,
+        "height": 56
+      },
+      {
+        "text": "Siųsti",
+        "top": 853,
+        "bottom": 909,
+        "width": 180,
+        "height": 56
+      }
+    ]
+  },
+  {
+    "name": "live-ready",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 190.53125,
+        "bottom": 254.53125,
+        "width": 147.1875,
+        "height": 64
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 860,
+        "bottom": 920,
+        "width": 398,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "live",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 148.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 860,
+        "bottom": 920,
+        "width": 398,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "selected",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 148.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 860,
+        "bottom": 920,
+        "width": 398,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "show",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [
+      {
+        "className": "modal translation-modal",
+        "top": 0,
+        "bottom": 932,
+        "left": 0,
+        "right": 430,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 0,
+        "bottom": 81,
+        "left": 0,
+        "right": 430,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 14,
+        "bottom": 66,
+        "left": 303.515625,
+        "right": 414,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 81,
+        "bottom": 777,
+        "left": 0,
+        "right": 430,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 148.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 860,
+        "bottom": 920,
+        "width": 398,
+        "height": 60
+      },
+      {
+        "text": " Pakartoti",
+        "top": 790,
+        "bottom": 848,
+        "width": 192.5,
+        "height": 58
+      },
+      {
+        "text": " Grįžti",
+        "top": 790,
+        "bottom": 848,
+        "width": 192.5,
+        "height": 58
+      },
+      {
+        "text": "Baigti pokalbį",
+        "top": 858,
+        "bottom": 916,
+        "width": 398,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "show-reply",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [
+      {
+        "className": "modal translation-modal",
+        "top": 0,
+        "bottom": 932,
+        "left": 0,
+        "right": 430,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 0,
+        "bottom": 81,
+        "left": 0,
+        "right": 430,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 14,
+        "bottom": 66,
+        "left": 303.515625,
+        "right": 414,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 81,
+        "bottom": 777,
+        "left": 0,
+        "right": 430,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 148.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 860,
+        "bottom": 920,
+        "width": 398,
+        "height": 60
+      },
+      {
+        "text": " Pakartoti",
+        "top": 790,
+        "bottom": 848,
+        "width": 192.5,
+        "height": 58
+      },
+      {
+        "text": " Grįžti",
+        "top": 790,
+        "bottom": 848,
+        "width": 192.5,
+        "height": 58
+      },
+      {
+        "text": "Baigti pokalbį",
+        "top": 858,
+        "bottom": 916,
+        "width": 398,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "live-menu",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [
+      {
+        "className": "modal live-menu-modal",
+        "top": 100.5,
+        "bottom": 831.484375,
+        "left": 8,
+        "right": 422,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 101.5,
+        "bottom": 182.5,
+        "left": 9,
+        "right": 421,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 115.5,
+        "bottom": 167.5,
+        "left": 294.515625,
+        "right": 405,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 182.5,
+        "bottom": 830.484375,
+        "left": 9,
+        "right": 421,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 148.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 860,
+        "bottom": 920,
+        "width": 398,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "recap",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [
+      {
+        "className": "modal conversation-note",
+        "top": 8,
+        "bottom": 924,
+        "left": 8,
+        "right": 422,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-heading",
+        "top": 9,
+        "bottom": 90,
+        "left": 9,
+        "right": 421,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-close",
+        "top": 23,
+        "bottom": 75,
+        "left": 294.515625,
+        "right": 405,
+        "scrollTop": 0
+      },
+      {
+        "className": "modal-content",
+        "top": 90,
+        "bottom": 766,
+        "left": 9,
+        "right": 421,
+        "scrollTop": 0
+      }
+    ],
+    "controls": [
+      {
+        "text": "Pauzė",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 148.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 860,
+        "bottom": 920,
+        "width": 398,
+        "height": 60
+      },
+      {
+        "text": "Išklausyti",
+        "top": 779,
+        "bottom": 837,
+        "width": 380,
+        "height": 58
+      },
+      {
+        "text": "Grįžti į pokalbį",
+        "top": 849,
+        "bottom": 907,
+        "width": 380,
+        "height": 58
+      }
+    ]
+  },
+  {
+    "name": "paused",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 932,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Klausytis toliau",
+        "top": 171.59375,
+        "bottom": 235.59375,
+        "width": 148.796875,
+        "height": 64
+      },
+      {
+        "text": " Pakartoti",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 790,
+        "bottom": 850,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 860,
+        "bottom": 920,
+        "width": 398,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "ended",
+    "width": 430,
+    "height": 932,
+    "scrollWidth": 430,
+    "scrollHeight": 939,
+    "modal": [],
+    "controls": [
+      {
+        "text": "Tęsti pokalbį",
+        "top": 278.984375,
+        "bottom": 342.984375,
+        "width": 368,
+        "height": 64
+      },
+      {
+        "text": "Naujas pokalbis",
+        "top": 356.984375,
+        "bottom": 414.984375,
+        "width": 368,
+        "height": 58
+      },
+      {
+        "text": " Pakartoti",
+        "top": 858.578125,
+        "bottom": 918.578125,
+        "width": 194,
+        "height": 60
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 858.578125,
+        "bottom": 918.578125,
+        "width": 194,
+        "height": 60
+      }
+    ]
+  },
+  {
+    "name": "home",
+    "width": 1440,
+    "height": 1000,
+    "scrollWidth": 1440,
+    "scrollHeight": 1221,
+    "modal": [],
+    "controls": [
+      {
+        "text": " GYVAIVersti pokalbįLietuviškai ⇄ itališkaiKalbėkite lietuviškai.Išversime abiem pusėms.Pradėti pokalbį",
+        "top": 631.609375,
+        "bottom": 949.609375,
+        "width": 366.65625,
+        "height": 318
+      },
+      {
+        "text": "Aa Išversti nuotraukąMeniu, ženklai, bilietaiViskas aiškiai lietuviškai.Pasirinkti nuotrauką",
+        "top": 631.609375,
+        "bottom": 949.609375,
+        "width": 366.671875,
+        "height": 318
+      },
+      {
+        "text": "Ciao!Paklausti patarimoAtsakymai lietuviškaiApie maistą, transportą ir kelionę.Užduoti klausimą",
+        "top": 631.609375,
+        "bottom": 949.609375,
+        "width": 366.65625,
+        "height": 318
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "promptVersion": "2026-10-08.el.1",
+  "createdAt": "2026-10-08T21:34:01.542Z",
+  "synthetic": true,
+  "notes": [],
+  "conversations": [
+    {
+      "name": "el_numbers",
+      "input": "Η επιστροφή είναι στις δεκαεπτά και τριάντα. Η τιμή είναι δεκαπέντε ευρώ το άτομο.",
+      "inputSeconds": 7.35,
+      "heard": " Η επιστροφή είναι στις δεκαεπτά. και τριάντα, η τιμή είναι δεκαπέντε ευρώ το άτομο",
+      "translated": "Grįžimas yra septynioliktą trisdešimt, kaina yra penkiolika eurų asmeniui.",
+      "audioBytes": 984000,
+      "unsolicitedBeforeInput": "",
+      "events": [
+        {
+          "type": "session.started",
+          "ms": 1015,
+          "client_event_id": "016cb2b2-b9a9-400c-9d0e-da7756865a7f"
+        },
+        {
+          "type": "session.usage.updated",
+          "ms": 15816
+        },
+        {
+          "type": "session.closed",
+          "ms": 23450,
+          "client_event_id": "008de287-b257-4141-83f9-0c37868a65ac"
+        }
+      ],
+      "closed": true,
+      "sessionId": "live_u1_EWq2Up3oMnI6C1Km2SaF9G77TYyWZKlw",
+      "usage": {
+        "seconds": 22
+      }
+    }
+  ]
+}

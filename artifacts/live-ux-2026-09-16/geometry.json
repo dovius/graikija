@@ -1,0 +1,169 @@
+[
+  {
+    "name": "home-390x640",
+    "viewport": {
+      "width": 390,
+      "height": 640
+    },
+    "scrollWidth": 390,
+    "controls": []
+  },
+  {
+    "name": "live-390x640",
+    "viewport": {
+      "width": 390,
+      "height": 640
+    },
+    "scrollWidth": 390,
+    "controls": [
+      {
+        "text": " Pakartoti",
+        "top": 455.40625,
+        "bottom": 519,
+        "height": 63.59375
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 455.40625,
+        "bottom": 519,
+        "height": 63.59375
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 529,
+        "bottom": 586,
+        "height": 57
+      },
+      {
+        "text": "Daugiau veiksmų ↓",
+        "top": 586,
+        "bottom": 630,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "name": "selected-390x844",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollWidth": 390,
+    "controls": [
+      {
+        "text": " Pakartoti",
+        "top": 635.40625,
+        "bottom": 699,
+        "height": 63.59375
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 635.40625,
+        "bottom": 699,
+        "height": 63.59375
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 709,
+        "bottom": 766,
+        "height": 57
+      },
+      {
+        "text": "Daugiau veiksmų ↓",
+        "top": 766,
+        "bottom": 810,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "name": "show-and-listen-390x844",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollWidth": 390,
+    "controls": [
+      {
+        "text": " Pakartoti",
+        "top": 635.40625,
+        "bottom": 699,
+        "height": 63.59375
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 635.40625,
+        "bottom": 699,
+        "height": 63.59375
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 709,
+        "bottom": 766,
+        "height": 57
+      },
+      {
+        "text": "Daugiau veiksmų ↓",
+        "top": 766,
+        "bottom": 810,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "name": "recap-390x844",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "scrollWidth": 390,
+    "controls": [
+      {
+        "text": " Pakartoti",
+        "top": 254.40625,
+        "bottom": 318,
+        "height": 63.59375
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 254.40625,
+        "bottom": 318,
+        "height": 63.59375
+      },
+      {
+        "text": " Baigti pokalbį",
+        "top": 328,
+        "bottom": 385,
+        "height": 57
+      },
+      {
+        "text": "Daugiau veiksmų ↓",
+        "top": 385,
+        "bottom": 429,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "name": "ended-390x640",
+    "viewport": {
+      "width": 390,
+      "height": 640
+    },
+    "scrollWidth": 390,
+    "controls": [
+      {
+        "text": " Pakartoti",
+        "top": 561.9375,
+        "bottom": 625.53125,
+        "height": 63.59375
+      },
+      {
+        "text": " Parodyti žmogui",
+        "top": 561.9375,
+        "bottom": 625.53125,
+        "height": 63.59375
+      }
+    ]
+  }
+]

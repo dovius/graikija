@@ -1,0 +1,335 @@
+[
+  {
+    "name": "active-chromium-360x800",
+    "innerHeight": 800,
+    "clientHeight": 800,
+    "visualHeight": 800,
+    "width": 360,
+    "documentWidth": 360,
+    "button": {
+      "top": 359.703125,
+      "bottom": 408.890625,
+      "width": 250,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "closing-chromium-360x800",
+    "innerHeight": 800,
+    "clientHeight": 800,
+    "visualHeight": 800,
+    "width": 360,
+    "documentWidth": 360,
+    "button": {
+      "top": 359.90625,
+      "bottom": 409.09375,
+      "width": 250,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "ended-chromium-360x800",
+    "innerHeight": 800,
+    "clientHeight": 800,
+    "visualHeight": 800,
+    "width": 360,
+    "documentWidth": 360,
+    "button": null
+  },
+  {
+    "name": "active-chromium-375x812",
+    "innerHeight": 812,
+    "clientHeight": 812,
+    "visualHeight": 812,
+    "width": 375,
+    "documentWidth": 375,
+    "button": {
+      "top": 364.109375,
+      "bottom": 413.296875,
+      "width": 265,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "closing-chromium-375x812",
+    "innerHeight": 812,
+    "clientHeight": 812,
+    "visualHeight": 812,
+    "width": 375,
+    "documentWidth": 375,
+    "button": {
+      "top": 364.109375,
+      "bottom": 413.296875,
+      "width": 265,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "ended-chromium-375x812",
+    "innerHeight": 812,
+    "clientHeight": 812,
+    "visualHeight": 812,
+    "width": 375,
+    "documentWidth": 375,
+    "button": null
+  },
+  {
+    "name": "active-chromium-390x844",
+    "innerHeight": 844,
+    "clientHeight": 844,
+    "visualHeight": 844,
+    "width": 390,
+    "documentWidth": 390,
+    "button": {
+      "top": 380.109375,
+      "bottom": 429.296875,
+      "width": 274,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "closing-chromium-390x844",
+    "innerHeight": 844,
+    "clientHeight": 844,
+    "visualHeight": 844,
+    "width": 390,
+    "documentWidth": 390,
+    "button": {
+      "top": 380.109375,
+      "bottom": 429.296875,
+      "width": 274,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "ended-chromium-390x844",
+    "innerHeight": 844,
+    "clientHeight": 844,
+    "visualHeight": 844,
+    "width": 390,
+    "documentWidth": 390,
+    "button": null
+  },
+  {
+    "name": "active-chromium-430x932",
+    "innerHeight": 932,
+    "clientHeight": 932,
+    "visualHeight": 932,
+    "width": 430,
+    "documentWidth": 430,
+    "button": {
+      "top": 424.109375,
+      "bottom": 473.296875,
+      "width": 314,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "closing-chromium-430x932",
+    "innerHeight": 932,
+    "clientHeight": 932,
+    "visualHeight": 932,
+    "width": 430,
+    "documentWidth": 430,
+    "button": {
+      "top": 411.703125,
+      "bottom": 460.890625,
+      "width": 314,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "ended-chromium-430x932",
+    "innerHeight": 932,
+    "clientHeight": 932,
+    "visualHeight": 932,
+    "width": 430,
+    "documentWidth": 430,
+    "button": null
+  },
+  {
+    "name": "active-chromium-390x640",
+    "innerHeight": 640,
+    "clientHeight": 640,
+    "visualHeight": 640,
+    "width": 390,
+    "documentWidth": 390,
+    "button": {
+      "top": 288.375,
+      "bottom": 337.5625,
+      "width": 274,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "closing-chromium-390x640",
+    "innerHeight": 640,
+    "clientHeight": 640,
+    "visualHeight": 640,
+    "width": 390,
+    "documentWidth": 390,
+    "button": {
+      "top": 288.375,
+      "bottom": 337.5625,
+      "width": 274,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "ended-chromium-390x640",
+    "innerHeight": 640,
+    "clientHeight": 640,
+    "visualHeight": 640,
+    "width": 390,
+    "documentWidth": 390,
+    "button": null
+  },
+  {
+    "name": "active-chromium-768x1024",
+    "innerHeight": 1024,
+    "clientHeight": 1024,
+    "visualHeight": 1024,
+    "width": 768,
+    "documentWidth": 768,
+    "button": {
+      "top": 451.203125,
+      "bottom": 500.390625,
+      "width": 638,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "closing-chromium-768x1024",
+    "innerHeight": 1024,
+    "clientHeight": 1024,
+    "visualHeight": 1024,
+    "width": 768,
+    "documentWidth": 768,
+    "button": {
+      "top": 451.203125,
+      "bottom": 500.390625,
+      "width": 638,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "ended-chromium-768x1024",
+    "innerHeight": 1024,
+    "clientHeight": 1024,
+    "visualHeight": 1024,
+    "width": 768,
+    "documentWidth": 768,
+    "button": null
+  },
+  {
+    "name": "active-chromium-1024x900",
+    "innerHeight": 900,
+    "clientHeight": 900,
+    "visualHeight": 900,
+    "width": 1024,
+    "documentWidth": 1024,
+    "button": {
+      "top": 389.203125,
+      "bottom": 438.390625,
+      "width": 756,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "closing-chromium-1024x900",
+    "innerHeight": 900,
+    "clientHeight": 900,
+    "visualHeight": 900,
+    "width": 1024,
+    "documentWidth": 1024,
+    "button": {
+      "top": 389.203125,
+      "bottom": 438.390625,
+      "width": 756,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "ended-chromium-1024x900",
+    "innerHeight": 900,
+    "clientHeight": 900,
+    "visualHeight": 900,
+    "width": 1024,
+    "documentWidth": 1024,
+    "button": null
+  },
+  {
+    "name": "active-chromium-1440x1080",
+    "innerHeight": 1080,
+    "clientHeight": 1080,
+    "visualHeight": 1080,
+    "width": 1440,
+    "documentWidth": 1440,
+    "button": {
+      "top": 479.203125,
+      "bottom": 528.390625,
+      "width": 756,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "closing-chromium-1440x1080",
+    "innerHeight": 1080,
+    "clientHeight": 1080,
+    "visualHeight": 1080,
+    "width": 1440,
+    "documentWidth": 1440,
+    "button": {
+      "top": 479.203125,
+      "bottom": 528.390625,
+      "width": 756,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "ended-chromium-1440x1080",
+    "innerHeight": 1080,
+    "clientHeight": 1080,
+    "visualHeight": 1080,
+    "width": 1440,
+    "documentWidth": 1440,
+    "button": null
+  },
+  {
+    "name": "active-webkit-390x844",
+    "innerHeight": 844,
+    "clientHeight": 844,
+    "visualHeight": 844,
+    "width": 390,
+    "documentWidth": 390,
+    "button": {
+      "top": 380.109375,
+      "bottom": 429.296875,
+      "width": 274,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "closing-webkit-390x844",
+    "innerHeight": 844,
+    "clientHeight": 844,
+    "visualHeight": 844,
+    "width": 390,
+    "documentWidth": 390,
+    "button": {
+      "top": 380.109375,
+      "bottom": 429.296875,
+      "width": 274,
+      "height": 49.1875
+    }
+  },
+  {
+    "name": "ended-webkit-390x844",
+    "innerHeight": 844,
+    "clientHeight": 844,
+    "visualHeight": 844,
+    "width": 390,
+    "documentWidth": 390,
+    "button": null
+  }
+]

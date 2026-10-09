@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-09-16T16:35:35.894Z",
+  "version": "344cbf19-8432-4e55-a290-5d93f34177a0",
+  "health": [
+    {
+      "origin": "https://italiano.vild.lt",
+      "status": 200,
+      "ok": true,
+      "configured": true
+    },
+    {
+      "origin": "https://keliones-vertejas.dovius-vili.workers.dev",
+      "status": 200,
+      "ok": true,
+      "configured": true
+    }
+  ],
+  "assets": [
+    {
+      "path": "/assets/index-CX1iIgx-.js",
+      "status": 200,
+      "sha256": "4e8420b5e96bba5118c25843068e2db7ae423f8296be0efb25917f99027aba9b"
+    },
+    {
+      "path": "/assets/index-dlOjMz7D.css",
+      "status": 200,
+      "sha256": "d427c4bc00c8920724dc4fb50ef1c4f190faf347e280873c6b271ff3affce1b5"
+    },
+    {
+      "path": "/sw.js",
+      "status": 200,
+      "sha256": "ea416bf9f624569ce47b8b8cb4507216958398ce87c8980ba5fc2267f26f6632"
+    }
+  ]
+}
