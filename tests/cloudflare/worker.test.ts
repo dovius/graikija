@@ -67,7 +67,7 @@ before(async () => {
     cf: false, telemetry: { enabled: false }, logRequests: false, log: new Log(LogLevel.ERROR),
     workers: [{
       config: {
-        name: config.name, type: 'worker', compatibilityDate: config.compatibility_date,
+        name: config.name, compatibilityDate: config.compatibility_date,
         manifest: { mainModule: 'worker.mjs', modules: { 'worker.mjs': { type: 'esm', contents: bundle.outputFiles[0].text } } },
         env: {
           ...Object.fromEntries(Object.entries(config.vars as Record<string, string>).map(([name, value]) => [name, { type: 'text' as const, value }])),
@@ -107,9 +107,9 @@ before(async () => {
           if (path === 'audio/speech') return new WorkerResponse('test-mp3', { headers: { 'Content-Type': 'audio/mpeg' } });
           assert.equal(path, 'responses');
           const payload = body as { model: string; reasoning: { effort: string }; service_tier: string };
-          assert.equal(payload.model, 'gpt-5.6-sol');
+          assert.equal(payload.model, 'gpt-6.1-sol');
           assert.equal(payload.reasoning.effort, 'low');
-          assert.equal(payload.service_tier, 'fast');
+          assert.equal(payload.service_tier, 'default');
           await delay(25);
           return WorkerResponse.json({ status: 'completed', output: [{ type: 'message', content: [{ type: 'output_text', text: 'Galite pasakyti: „Τον λογαριασμό, παρακαλώ.“' }] }] });
         } },
@@ -225,7 +225,9 @@ test('audio endpoints accept iPhone MP4 and return streamed playback', async () 
   assert.equal(response.status, 200);
   assert.deepEqual(await response.json(), { text: 'Kur yra stotis?' });
   const sent = calls.at(-1)!.body as FormData;
-  assert.equal(sent.get('language'), 'lt');
+  assert.equal(sent.get('model'), 'gpt-transcribe');
+  assert.deepEqual(sent.getAll('languages[]'), ['lt']);
+  assert.equal(sent.has('language'), false);
   assert.equal((sent.get('file') as File).name, 'klausimas.m4a');
   const speech = await post('/api/speech', { text: 'Καλημέρα!' });
   assert.equal(speech.headers.get('content-type'), 'audio/mpeg');

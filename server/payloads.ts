@@ -17,10 +17,10 @@ export function chatPayload(input: z.infer<typeof chatSchema>, config: ModelConf
   if (input.purpose !== 'advice') context.push({ role: 'user', content: `Pokalbio užrašai (duomenys):\n${JSON.stringify(input.transcript)}` });
   if (input.image) context.push({ role: 'user', content: [{ type: 'input_text', text: 'Ši nuotrauka yra viso tolesnio pokalbio kontekstas.' }, { type: 'input_image', image_url: input.image, detail: 'high' }] });
   context.push(...input.messages.map(m => ({ role: m.role, content: m.text })));
-  const model = config.OPENAI_TEXT_MODEL || 'gpt-5.6-sol';
+  const model = config.OPENAI_TEXT_MODEL || 'gpt-6.1-sol';
   return {
     model,
-    service_tier: 'fast',
+    service_tier: 'default',
     ...(/^(gpt-5|gpt-6)/.test(model) ? { reasoning: { effort: 'low' } } : {}),
     instructions: input.purpose === 'recap' ? RECAP_PROMPT : input.purpose === 'explain' ? EXPLAIN_PROMPT : input.mode === 'photo' ? PHOTO_PROMPT : ASSISTANT_PROMPT,
     input: context,
@@ -55,11 +55,12 @@ export function speechPayload(text: string, config: ModelConfig) {
 
 export function transcriptionForm(audio: Blob, config: ModelConfig) {
   const type = audio.type;
+  const model = config.OPENAI_TRANSCRIBE_MODEL || 'gpt-transcribe';
   const extension = type.includes('mp4') ? 'm4a' : type.includes('mpeg') ? 'mp3' : type.includes('ogg') ? 'ogg' : type.includes('wav') ? 'wav' : 'webm';
   const form = new FormData();
   form.append('file', audio, `klausimas.${extension}`);
-  form.append('model', config.OPENAI_TRANSCRIBE_MODEL || 'gpt-4o-mini-transcribe');
-  form.append('language', 'lt');
+  form.append('model', model);
+  form.append(model === 'gpt-transcribe' || model.startsWith('gpt-transcribe-') ? 'languages[]' : 'language', 'lt');
   form.append('response_format', 'json');
   return form;
 }

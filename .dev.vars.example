@@ -1,0 +1,13 @@
+# Cloudflare secrets only. Copy to .dev.vars and chmod 600 .dev.vars.
+# Model defaults and notification delivery are in wrangler.jsonc.
+OPENAI_API_KEY=
+# Optional private invitation: generate with openssl rand -hex 24.
+TRIP_ACCESS_TOKEN=
+# Set a separate strong password to enable admin history.
+STATS_ADMIN_PASSWORD=
+STATS_RETENTION_DAYS=30
+
+# Explicit opt-in only. Example: https://ntfy.sh/dode-graikija
+# Public topics expose excerpts to anyone who knows the topic name.
+NTFY_TOPIC_URL=
+NTFY_TOKEN=

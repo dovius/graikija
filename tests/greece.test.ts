@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { INTERPRETER_PROMPT, ASSISTANT_PROMPT, PHOTO_PROMPT, RECAP_PROMPT, EXPLAIN_PROMPT } from '../server/prompts';
 import { readFileSync } from 'node:fs';
-import { speechPayload } from '../server/payloads';
+import { speechPayload, transcriptionForm } from '../server/payloads';
 import { livePayload } from '../server/payloads';
 import { sessionSchema } from '../server/validation';
 import { DEFAULT_LIVE_PREFERENCES, livePreferenceInstructions } from '../shared/live';
@@ -42,6 +42,17 @@ test('offline speech recognizes Greek script and uses Lithuanian for unaccented 
   assert.equal(travel.speechLocale('Ρόδος'), 'el-GR');
   assert.equal(travel.speechLocale('Laba diena'), 'lt-LT');
   assert.equal(travel.speechLocale('Ačiū'), 'lt-LT');
+});
+
+test('dictation sends the language field required by the selected transcription model', () => {
+  for (const model of ['gpt-transcribe', 'gpt-transcribe-2026-08-26', 'gpt-4o-mini-transcribe']) {
+    const form = transcriptionForm(new Blob(['audio'], { type: 'audio/mp4' }), { OPENAI_TRANSCRIBE_MODEL: model });
+    assert.equal(form.get('model'), model);
+    assert.equal((form.get('file') as File).name, 'klausimas.m4a');
+    const field = model.startsWith('gpt-transcribe') ? 'languages[]' : 'language';
+    assert.deepEqual(form.getAll(field), ['lt']);
+    assert.equal(form.has(field === 'language' ? 'languages[]' : 'language'), false);
+  }
 });
 
 test('mixed speech follows the dominant script and falls back to Lithuanian on ties', () => {

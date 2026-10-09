@@ -18,9 +18,9 @@ const app = createApp(async (path, body) => {
   if (path === 'audio/transcriptions') return Response.json({ text: 'Kur yra stotis?' });
   if (path === 'audio/speech') return new Response('test-audio', { headers: { 'content-type': 'audio/mpeg' } });
   const payload = body as { model: string; reasoning: { effort: string }; service_tier: string };
-  assert.equal(payload.model, 'gpt-5.6-sol');
+  assert.equal(payload.model, 'gpt-6.1-sol');
   assert.equal(payload.reasoning.effort, 'low');
-  assert.equal(payload.service_tier, 'fast');
+  assert.equal(payload.service_tier, 'default');
   return Response.json({ status: 'completed', output: [{ type: 'message', content: [{ type: 'output_text', text: 'Galite pasakyti: „Τον λογαριασμό, παρακαλώ.“' }] }] });
 });
 let server: Server;
@@ -117,7 +117,9 @@ test('speech validates length and dictation accepts mobile MP4 audio', async () 
   assert.equal(response.status, 200);
   assert.deepEqual(await response.json(), { text: 'Kur yra stotis?' });
   const forwarded = calls.at(-1)!.body as FormData;
-  assert.equal(forwarded.get('language'), 'lt');
+  assert.equal(forwarded.get('model'), 'gpt-transcribe');
+  assert.deepEqual(forwarded.getAll('languages[]'), ['lt']);
+  assert.equal(forwarded.has('language'), false);
   assert.equal((forwarded.get('file') as File).name, 'klausimas.m4a');
 });
 test('extracts accessible citations and rejects partial answers', () => {

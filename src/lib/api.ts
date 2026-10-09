@@ -29,7 +29,8 @@ export async function request(path: string, body: unknown, signal?: AbortSignal,
       }
       throw new ApiError('Vertėjas nepasiekiamas. Pabandykite dar kartą po kelių akimirkų.', undefined, response.status);
     }
-    return response;
+    // Fetch resolves at headers; retain timeout/cancellation until the body arrives.
+    return new Response(response.body ? await response.arrayBuffer() : null, response);
   } catch (error) {
     if (error instanceof ApiError) throw error;
     if (signal?.aborted) throw new DOMException('Cancelled', 'AbortError');

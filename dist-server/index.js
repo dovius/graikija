@@ -39,8 +39,7 @@ function createOpenAIRequest(key, fetcher = (input, init) => fetch(input, init))
 async function requestWithKey(key, path, body, timeout, fetcher = (input, init) => fetch(input, init)) {
   requireKey(key);
   const multipart = body instanceof FormData;
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeout);
+  const signal = AbortSignal.timeout(timeout);
   let response;
   try {
     response = await fetcher(`https://api.openai.com/v1/${path}`, {
@@ -50,12 +49,10 @@ async function requestWithKey(key, path, body, timeout, fetcher = (input, init) 
         ...!multipart && body !== void 0 ? { "Content-Type": "application/json" } : {}
       },
       body: body === void 0 ? void 0 : multipart ? body : JSON.stringify(body),
-      signal: controller.signal
+      signal
     });
   } catch {
     throw new ServiceError(504, "upstream_timeout", "Ry\u0161ys su vert\u0117ju u\u017Etruko. Pabandykite dar kart\u0105 \u2013 j\u016Bs\u0173 tekstas ir nuotrauka i\u0161liko.");
-  } finally {
-    clearTimeout(timer);
   }
   if (!response.ok) {
     if (response.status === 404 && /^live\/sessions\/[A-Za-z0-9_-]+\/hangup$/.test(path)) {
@@ -256,10 +253,10 @@ function chatPayload(input, config) {
 ${JSON.stringify(input.transcript)}` });
   if (input.image) context.push({ role: "user", content: [{ type: "input_text", text: "\u0160i nuotrauka yra viso tolesnio pokalbio kontekstas." }, { type: "input_image", image_url: input.image, detail: "high" }] });
   context.push(...input.messages.map((m) => ({ role: m.role, content: m.text })));
-  const model = config.OPENAI_TEXT_MODEL || "gpt-5.6-sol";
+  const model = config.OPENAI_TEXT_MODEL || "gpt-6.1-sol";
   return {
     model,
-    service_tier: "fast",
+    service_tier: "default",
     .../^(gpt-5|gpt-6)/.test(model) ? { reasoning: { effort: "low" } } : {},
     instructions: input.purpose === "recap" ? RECAP_PROMPT : input.purpose === "explain" ? EXPLAIN_PROMPT : input.mode === "photo" ? PHOTO_PROMPT : ASSISTANT_PROMPT,
     input: context,
@@ -294,11 +291,12 @@ function speechPayload(text, config) {
 }
 function transcriptionForm(audio, config) {
   const type = audio.type;
+  const model = config.OPENAI_TRANSCRIBE_MODEL || "gpt-transcribe";
   const extension = type.includes("mp4") ? "m4a" : type.includes("mpeg") ? "mp3" : type.includes("ogg") ? "ogg" : type.includes("wav") ? "wav" : "webm";
   const form = new FormData();
   form.append("file", audio, `klausimas.${extension}`);
-  form.append("model", config.OPENAI_TRANSCRIBE_MODEL || "gpt-4o-mini-transcribe");
-  form.append("language", "lt");
+  form.append("model", model);
+  form.append(model === "gpt-transcribe" || model.startsWith("gpt-transcribe-") ? "languages[]" : "language", "lt");
   form.append("response_format", "json");
   return form;
 }
