@@ -1,6 +1,28 @@
 import { test, expect } from '@playwright/test';
 import { mockLive } from './fixtures/live';
 
+test('Live starts and saves captions when crypto.randomUUID is unavailable', async ({ page, isMobile }) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  const connections = await mockLive(page);
+  await page.addInitScript(() => Object.defineProperty(crypto, 'randomUUID', { value: undefined, configurable: true }));
+  await page.goto('/');
+  const start = page.getByRole('button', { name: 'Versti pokalbį', exact: true });
+  if (isMobile) await start.tap(); else await start.click();
+  await expect(page.getByText('Galite kalbėti', { exact: true })).toBeVisible();
+  expect(connections[0].conversationId).toMatch(/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/);
+  await page.evaluate(() => {
+    (window as any).fakePeer.channel.emit({ type: 'session.input_transcript.delta', delta: 'Ar galime čia statyti?', start_ms: 0, end_ms: 1000 });
+  });
+  await expect(page.getByText('Ar galime čia statyti?', { exact: true })).toBeVisible();
+  const saved = page.waitForRequest(request => request.url().endsWith('/api/live/fragments') && request.postDataJSON().fragments.length > 0);
+  await page.getByRole('button', { name: 'Baigti pokalbį', exact: true }).click();
+  expect((await saved).postDataJSON().fragments[0].text).toBe('Ar galime čia statyti?');
+  await expect(page.getByText('Ačiū už pokalbį.', { exact: true })).toBeVisible();
+  expect(await page.evaluate(() => (window as any).captureStreams.every((stream: MediaStream) => stream.getTracks().every(track => track.readyState === 'ended')))).toBe(true);
+  expect(errors).toEqual([]);
+});
+
 test('Live explains a missing API when a static host returns HTML 405', async ({ page }) => {
   await mockLive(page);
   let attempts = 0;

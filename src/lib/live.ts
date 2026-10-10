@@ -2,6 +2,7 @@ import { notificationActivity } from './notifications';
 import type { LivePreferences, TranscriptFragment } from '../../shared/types';
 import { DEFAULT_LIVE_PREFERENCES, livePreferenceInstructions, type LiveDiagnostic } from '../../shared/live';
 import { ApiError, mediaError, request } from './api';
+import { randomUUID } from './id';
 import { conversationFragments, liveHistory } from './transcripts';
 import { CaptionReporter } from './captionReporter';
 import { ListeningGuard, type ListeningStopReason, type ListeningWarning } from './listeningGuard';
@@ -148,7 +149,7 @@ export class LiveConversation {
           // Only newly heard human speech extends the inactivity window. The
           // model's own captions (including delayed ones) cannot keep it alive.
           if (this.wanted && !this.muted && event.type === 'session.input_transcript.delta' && event.delta.trim()) this.safety.heardSpeech();
-          const fragment: TranscriptFragment = { conversationId: this.conversationId, id: typeof event.event_id === 'string' ? event.event_id : crypto.randomUUID(), session: this.id || `connection-${run}`, role: event.type === 'session.input_transcript.delta' ? 'user' : 'assistant', text: event.delta, start: event.start_ms, end: event.end_ms };
+          const fragment: TranscriptFragment = { conversationId: this.conversationId, id: typeof event.event_id === 'string' ? event.event_id : randomUUID(), session: this.id || `connection-${run}`, role: event.type === 'session.input_transcript.delta' ? 'user' : 'assistant', text: event.delta, start: event.start_ms, end: event.end_ms };
           this.callbacks.fragment(fragment);
           if (this.id) this.captions.add(fragment);
         } else if (event.type === 'session.closed') {
@@ -271,7 +272,7 @@ export class LiveConversation {
   updatePreferences(preferences: LivePreferences): Promise<boolean> {
     if (!this.wanted || !this.ready || this.channel?.readyState !== 'open' || this.steering) return Promise.resolve(false);
     return new Promise(resolve => {
-      const id = crypto.randomUUID();
+      const id = randomUUID();
       this.steering = { id, preferences, resolve, timer: setTimeout(() => { this.finishSteering(false); this.reconnect(); }, 5000) };
       try { this.channel!.send(JSON.stringify({ type: 'session.instructions.append', event_id: id, delegation_id: null, content: livePreferenceInstructions(preferences) })); }
       catch { this.finishSteering(false); }
@@ -286,7 +287,7 @@ export class LiveConversation {
     pending.resolve(accepted);
   }
   record(type: LiveDiagnostic['type'], value?: LiveDiagnostic['value']) {
-    if (this.id) this.captions.record(this.id, { id: crypto.randomUUID(), at: Date.now(), type, ...(value === undefined ? {} : { value }) });
+    if (this.id) this.captions.record(this.id, { id: randomUUID(), at: Date.now(), type, ...(value === undefined ? {} : { value }) });
   }
   private hangup(id: string, beacon = false) {
     const data = JSON.stringify({ sessionId: id });

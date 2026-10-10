@@ -7,6 +7,7 @@ import { LiveConversation, type LiveStatus } from './lib/live';
 import type { ListeningStopReason, ListeningWarning } from './lib/listeningGuard';
 import { conversationFragments, groupTranscripts } from './lib/transcripts';
 import { request } from './lib/api';
+import { randomUUID } from './lib/id';
 import { prepareImage } from './lib/image';
 import { useChat } from './hooks/useChat';
 import { useSpeech } from './hooks/useSpeech';
@@ -167,7 +168,7 @@ function TripApp({ trip, setTrip, storageError }: { trip: SavedTrip; setTrip: Di
   function navigate(next: Screen) { if (next === screen) return; location.hash = next === 'home' ? '' : next; setScreen(next); }
   function startLive(fresh = false) {
     if (active) return;
-    const conversation = !fresh && tripRef.current.liveConversation || { id: crypto.randomUUID(), startedAt: Date.now() };
+    const conversation = !fresh && tripRef.current.liveConversation || { id: randomUUID(), startedAt: Date.now() };
     const resume = !fresh && Boolean(tripRef.current.liveConversation);
     const nextPreferences = fresh ? { ...preferences, direction: 'auto' as const } : preferences;
     const updated = { ...tripRef.current, livePreferences: nextPreferences, liveConversation: conversation, liveConversations: [...(tripRef.current.liveConversations || []).filter(item => item.id !== conversation.id), conversation].slice(-50) };
@@ -208,7 +209,7 @@ function TripApp({ trip, setTrip, storageError }: { trip: SavedTrip; setTrip: Di
     const partial = Boolean(tripRef.current.liveConversation?.truncated) || transcript.length < all.length || all.some(row => row.text.length > 6000);
     const controller = new AbortController(); noteAbort.current = controller; setNoteBusy(true);
     try {
-      const response = await request('/api/chat', { requestId: crypto.randomUUID(), conversationId, mode: 'assistant', purpose, transcript, messages: [{ role: 'user', text: purpose === 'recap' ? 'Užrašyk svarbiausias pokalbio detales ir ką dar reikia patikslinti.' : `Paaiškink šią pasirinktą frazę pokalbio kontekste: ${text?.slice(0, 6000) || ''}` }] }, controller.signal);
+      const response = await request('/api/chat', { requestId: randomUUID(), conversationId, mode: 'assistant', purpose, transcript, messages: [{ role: 'user', text: purpose === 'recap' ? 'Užrašyk svarbiausias pokalbio detales ir ką dar reikia patikslinti.' : `Paaiškink šią pasirinktą frazę pokalbio kontekste: ${text?.slice(0, 6000) || ''}` }] }, controller.signal);
       const result: ConversationNote = { ...await response.json() as ChatResult, purpose, conversationId, fragmentCount: snapshot.length, snapshotId: snapshot.at(-1)?.id || '', partial };
       if (controller.signal.aborted) return;
       setNote(result);

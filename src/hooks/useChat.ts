@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import type { ChatMode, ChatResult, Message } from '../../shared/types';
 import { ApiError, request } from '../lib/api';
+import { randomUUID } from '../lib/id';
 
 function context(messages: Message[]) {
   const result: { role: 'user' | 'assistant'; text: string }[] = [];
@@ -43,7 +44,7 @@ export function useChat(mode: ChatMode, messages: Message[], image: string | und
       }
       const result = await response.json() as ChatResult;
       if (abort.signal.aborted) return;
-      current.current.onChange([...history, { id: crypto.randomUUID(), role: 'assistant' as const, text: result.text, sources: result.sources }].slice(-100));
+      current.current.onChange([...history, { id: randomUUID(), role: 'assistant' as const, text: result.text, sources: result.sources }].slice(-100));
     } catch (cause) {
       if (abort.signal.aborted) return;
       setError(cause instanceof Error ? cause.message : 'Nepavyko gauti atsakymo. Pabandykite dar kartą.');
@@ -59,7 +60,7 @@ export function useChat(mode: ChatMode, messages: Message[], image: string | und
   const send = useCallback((text: string, initialImage?: string, initialImageName?: string) => {
     if (!text.trim() || active.current) return;
     const previous = initialImage ? [] : current.current.messages;
-    const history = [...previous, { id: crypto.randomUUID(), role: 'user' as const, text: text.trim() }];
+    const history = [...previous, { id: randomUUID(), role: 'user' as const, text: text.trim() }];
     if (initialImage) { current.current.image = initialImage; current.current.imageName = initialImageName; }
     current.current.onChange(history);
     void perform(history);
